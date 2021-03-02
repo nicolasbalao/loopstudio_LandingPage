@@ -1,0 +1,238 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+}
+
+html {
+  background-color: whitesmoke;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+ul {
+  list-style: none;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+  background-color: var(--white);
+}
+
+header {
+  width: 100%;
+  height: 650px;
+  background-image: url(images/desktop/image-hero.jpg);
+  background-size: cover;
+  display: flex;
+  color: var(--white);
+  justify-content: space-around;
+  position: relative;
+}
+
+.title {
+  padding-top: 3rem;
+  font-family: "Alata";
+}
+
+nav {
+  width: 30%;
+  padding-top: 3rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul a {
+  font-size: 15px;
+  font-family: "Alata";
+}
+
+/* Header description */
+.description {
+  position: absolute;
+  left: 205px;
+  top: 200px;
+  border: 2px gainsboro solid;
+  width: 550px;
+  height: 250px;
+}
+
+.description p {
+  font-family: "Josefin Sans";
+  font-size: 4.5em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 5px;
+}
+
+/* SEC1 */
+
+.sec1 {
+  margin-top: 150px;
+  height: 110%;
+  display: flex;
+  position: relative;
+}
+
+.sec1 img {
+  margin-left: 205px;
+  width: 45%;
+  height: 45%;
+}
+
+.sec1 .description-image {
+  background-color: var(--white);
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 210px;
+  top: 180px;
+}
+
+.sec1 .description-image h1 {
+  padding-bottom: 25px;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Josefin sans";
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.sec1 .description-image p {
+  text-align: center;
+  font-size: 15px;
+  width: 400px;
+  font-family: "Alata";
+  color: var(--DarkGray);
+}
+
+/* sec2 */
+.sec2 {
+  width: 1040px;
+  margin: 200px auto;
+}
+
+.sec2 .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 104%;
+}
+
+.sec2 .header h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: "Josefin sans";
+  color: var(--black);
+}
+
+.sec2 .header a {
+  color: var(--black);
+  font-size: 15px;
+  font-family: "Alata";
+  text-transform: uppercase;
+  padding: 5px 30px;
+  border: 1px solid var(--black);
+}
+
+.sec2 .Galerie {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  -webkit-filter: brightness(70%);
+}
+
+.sec2 .Galerie .card p {
+  color: var(--white);
+  font-family: "Josefin sans";
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  text-shadow: 1px 1px var(--white);
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: var(--black);
+}
+
+footer .container {
+  width: 1040px;
+  margin: 10px auto;
+}
+
+footer h1 {
+  color: var(--white);
+  font-family: "Alata";
+}
+
+footer .top {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 104%;
+}
+
+footer .top ul {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .top li {
+  padding: 10px 0;
+}
+
+/* BOTTOM */
+
+footer .bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 104%;
+}
+
+footer .bottom ul {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+footer .bottom li {
+  color: white;
+  font-family: "Alata";
+}
+
+footer .bottom p {
+  color: var(--DarkGray);
+  font-family: "Alata";
+}
